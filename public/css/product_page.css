@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap);* {
+  font-family: "Poppins", sans-serif;
+}
+
+h4 {
+  color: #F28D35;
+  margin-left: 210px;
+  padding-top: 25px;
+}
+
+body {
+  background-color: #F2F2F5;
+}
+
+table,
+th,
+tr {
+  border: 5px;
+  border-color: #024059;
+}
+
+table {
+  margin-top: 10px;
+  background-color: white;
+}
+
+thead {
+  color: #024059;
+}
+
+button {
+  background-color: #F28D35;
+  color: #024059;
+  border-radius: 5px;
+}
+
+form {
+  border-color: #024059;
+  border-radius: 10px;
+}
+
+.col-md-4 a {
+  margin-bottom: 10px;
+}
+
+.search-container input {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  h4 {
+    margin-left: 100px;
+  }
+
+  .col-md-4 {
+    margin-top: 20px;
+  }
+
+  .col-md-8 form,
+  div {
+    text-align: left;
+  }
+}
+
+/***** Wrapper *****/
+
+.wrapper {
+  display: block;
+}
+
+/***** Sidebar *****/
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -220px;
+  z-index: 999;
+  background: #024059;
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+  text-align: left;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+/***** Content *****/
+
+.content {
+  width: 100%;
+  transition: all 0.3s;
+  background-color: #F2F2F5;
+}
+
+/* STYLE OPEN CLOSE BUTTON*/
+
+.open-menu {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 997;
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
+}
+
+.open-menu.btn-customized,
+.open-menu.btn-customized:hover,
+.open-menu.btn-customized:active,
+.open-menu.btn-customized:focus,
+.open-menu.btn-customized:active:focus,
+.open-menu.btn-customized.active:focus,
+.open-menu.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active,
+.open-menu.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
+}
+
+/* Style for all buttons with the class btn-customized */
+
+a.btn-customized {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.75rem 1.5rem;
+  background: #f35b3f;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  box-shadow: none;
+}
+
+a.btn-customized:hover,
+a.btn-customized:active,
+a.btn-customized:focus,
+a.btn-customized:active:focus,
+a.btn-customized.active:focus,
+a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active,
+a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+  outline: 0;
+  background: #cd533d;
+  /* for browsers that don't recognize rgba */
+  background: rgba(243, 91, 63, 0.7);
+  border: 0;
+  color: #fff;
+  box-shadow: none;
+}
+
+/*CLOSE BUTTON CODE HERE*/
+
+.dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.3s;
+  background: #F28D35;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.dismiss:hover,
+.dismiss:focus {
+  background: #F28D35;
+  color: #fff;
+}
+
+.dismiss .fas {
+  line-height: 2;
+}
+
+/*STYLING OF THE SIDEBAR CONTENT*/
+
+div.logo img {
+  height: 70px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+div.last {
+  margin-top: 180px;
+}
+
+.sidebar ul.menu-elements {
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  background-color: #F2F2F5;
+  color: #F28D35;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.sidebar ul li a i {
+  margin-right: 5px;
+}
+
+.sidebar ul ul a {
+  background: #F2F2F5;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.list-unstyled.menu-elements .active a.scroll-link {
+  color: #F28D35;
+  background-color: #F2F2F5;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.sidebar a[data-toggle=collapse] {
+  position: relative;
+}
+
+.sidebar .dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.collapse.list-unstyled li a {
+  color: #024059;
+  text-decoration: none;
+}
+

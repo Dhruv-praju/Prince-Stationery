@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.bg{
+	background:  #F2F2F5;
+	width:100%;
+	height: 100vh;
+	background-size: 200%;
+}
+
+
+.form-container{
+	color: #17736A;
+	position: absolute;
+	top: 15vh;
+	background: white;
+	padding: 30px;
+	border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73,
+               2px 2px 5px rgba(94,104,121,0.288);
+}
+
+img{
+  width: 270px;
+}
+
+button{
+	 color:white;
+  text-align: center;
+  align-content: left;
+   background: #F28D35;
+  border-radius: 10px;
+   border: none;
+   width: 60%;
+  height: 30px;
+  }
+
+  .forgot-pass  {
+    text-align: left;
+    color: #3498db;
+    font-size: 13px;
+}
